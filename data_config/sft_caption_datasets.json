@@ -1,0 +1,23 @@
+{
+    "llava_caption": {
+      "annotation": "data/llava_caption_sft.jsonl",
+      "video_root": "data",
+      "repeat_time": 1,
+      "type": "Caption",
+      "sample_rate": 1.0
+    },
+    "finevideo_caption": {
+      "annotation": "data/finevideo_caption_sft.jsonl",
+      "video_root": "data",
+      "repeat_time": 1,
+      "type": "Caption",
+      "sample_rate": 1.0
+    },
+    "shot2story_caption": {
+      "annotation": "data/shot2story_caption_sft.jsonl",
+      "video_root": "data",
+      "repeat_time": 1,
+      "type": "Caption",
+      "sample_rate": 1.0
+    }
+}

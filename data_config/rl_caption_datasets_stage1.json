@@ -1,0 +1,9 @@
+{
+    "llava_caption": {
+      "annotation": "data/stage1_caption_rl.jsonl",
+      "video_root": "data",
+      "repeat_time": 1,
+      "type": "Caption",
+      "sample_rate": 1.0
+    }
+}

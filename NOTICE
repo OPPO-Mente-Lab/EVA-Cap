@@ -1,0 +1,52 @@
+EVA-Cap
+Copyright 2026 OPPO and Fudan University
+
+This project includes source code copied or adapted from the following projects.
+The original copyright and license notices in source files remain in effect.
+
+HumanOmniV2
+Source: https://github.com/HumanMLLM/HumanOmniV2
+License: Apache-2.0
+
+AVoCaDO
+Source: https://github.com/AVoCaDO-Captioner/AVoCaDO
+
+Hugging Face TRL
+Source: https://github.com/huggingface/trl
+License: Apache-2.0
+
+PyTorch Lightning
+Source: https://github.com/Lightning-AI/pytorch-lightning
+Copyright The Lightning AI team.
+License: Apache-2.0
+
+Hugging Face Transformers
+Source: https://github.com/huggingface/transformers
+License: Apache-2.0
+
+Qwen2.5-Omni qwen-omni-utils
+Source: https://github.com/QwenLM/Qwen2.5-Omni/tree/main/qwen-omni-utils
+License: Apache-2.0
+
+Aurora VDC evaluation
+Source: https://github.com/wenhaochai/aurora
+Original source: https://github.com/EvolvingLMMs-Lab/lmms-eval
+Copyright (c) 2024 LMMs-Lab
+License: Apache-2.0
+
+COCO API
+Source: https://github.com/cocodataset/cocoapi
+License: Simplified BSD License
+The full COCO API license text is included in
+src/open_r1/utils/pycocotools/bsd.txt.
+
+EleutherAI lm-evaluation-harness
+Source: https://github.com/EleutherAI/lm-evaluation-harness
+Copyright (c) 2020 EleutherAI.
+License: MIT
+The full MIT license text is included in
+LICENSES/lm-evaluation-harness-MIT.txt.
+
+Hugging Face Open-R1
+Source: https://github.com/huggingface/open-r1
+License: Apache-2.0
