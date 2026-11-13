@@ -2,7 +2,7 @@
 
 Jiapeng Shi*, Qiuxia Hou*, [Jiaqi Leng](https://jiaqileng2002.github.io/), [Junke Wang](https://wdrink.github.io/), [Yanhao Zhang](https://scholar.google.com/citations?user=J1OguXAAAAAJ), [Haonan Lu](https://scholar.google.com/citations?user=EPBgKu0AAAAJ), [Ziyi Ye✉](https://ziyiye.cn/), [Zuxuan Wu✉](https://zxwu.azurewebsites.net/)
 
-[🎉 NeurIPS 2026](https://neurips.cc/virtual/2026/loc/sydney/poster/155915) | [Paper](https://arxiv.org/pdf/2610.22186) | [Code](https://github.com/OPPO-Mente-Lab/EVA-Cap) | [Model](https://huggingface.co/OPPOer/EVA-Cap-7B) | [Dataset](https://huggingface.co/datasets/OPPOer/EVA-data)
+[🎉 NeurIPS 2026](https://neurips.cc/virtual/2026/loc/sydney/poster/155915) | [Paper](https://arxiv.org/pdf/2610.22186) | [Code](https://github.com/OPPO-Mente-Lab/EVA-Cap) | [Model](https://huggingface.co/OPPOResearchInstitute/EVA-Cap-7B) | [Dataset](https://huggingface.co/datasets/OPPOResearchInstitute/EVA-data)
 
 
 ## 🔎 Overview
@@ -27,7 +27,7 @@ pip install flash-attn==2.8.0.post2 --no-build-isolation
 
 ## 🚀 Quick Start
 
-1. Download the [EVA-Cap checkpoint](https://huggingface.co/OPPOer/EVA-Cap-7B).
+1. Download the [EVA-Cap checkpoint](https://huggingface.co/OPPOResearchInstitute/EVA-Cap-7B).
 2. In [inference.py](inference.py), set `MODEL_PATH` to your downloaded checkpoint directory and `VIDEO_PATH` to your local video file.
 3. Run from the repository root:
 
@@ -41,7 +41,7 @@ python inference.py
 
 ### Data Preparation
 
-Download the five training annotation JSONL files from [EVA-data](https://huggingface.co/datasets/OPPOer/EVA-data) into `data/`. Download the corresponding source videos separately and arrange them as described in the [dataset README](https://huggingface.co/datasets/OPPOer/EVA-data/blob/main/README.md). The dataset README provides data sources, statistics, formats, and preparation instructions; video files are not included in EVA-data.
+Download the five training annotation JSONL files from [EVA-data](https://huggingface.co/datasets/OPPOResearchInstitute/EVA-data) into `data/`. Download the corresponding source videos separately and arrange them as described in the [dataset README](https://huggingface.co/datasets/OPPOResearchInstitute/EVA-data/blob/main/README.md). The dataset README provides data sources, statistics, formats, and preparation instructions; video files are not included in EVA-data.
 
 ### Processor Patch
 
@@ -58,7 +58,7 @@ Train with all the 63K EVA-data.
 BASE=<qwenomni_path> RUN_NAME=<save_path> bash run_scripts/run_sft_caption.sh
 ```
 
-Checkpoint: [SFT (`sft`)](https://huggingface.co/OPPOer/EVA-Cap-SFT-GRPO/tree/main/sft).
+Checkpoint: [SFT (`sft`)](https://huggingface.co/OPPOResearchInstitute/EVA-Cap-SFT-GRPO/tree/main/sft).
 
 ### GRPO
 
@@ -78,7 +78,7 @@ Optimize Global Event Completeness and Inter-Event Synchronization rewards.
 STAGE0=<base_path> RUN_NAME=<save_path> bash run_scripts/run_grpo_caption_stage1.sh
 ```
 
-Checkpoint: [GRPO stage 1 (`grpo_stage1`)](https://huggingface.co/OPPOer/EVA-Cap-SFT-GRPO/tree/main/grpo_stage1).
+Checkpoint: [GRPO stage 1 (`grpo_stage1`)](https://huggingface.co/OPPOResearchInstitute/EVA-Cap-SFT-GRPO/tree/main/grpo_stage1).
 
 #### Stage 2
 
@@ -88,7 +88,7 @@ Optimize Global Event Completeness, Intra-Event Attribution and Inter-Event Sync
 STAGE1=<base_path> RUN_NAME=<save_path> bash run_scripts/run_grpo_caption_stage2.sh
 ```
 
-Checkpoint: [EVA-Cap](https://huggingface.co/OPPOer/EVA-Cap-7B).
+Checkpoint: [EVA-Cap](https://huggingface.co/OPPOResearchInstitute/EVA-Cap-7B).
 
 
 ## 📈 Evaluation
